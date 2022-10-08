@@ -1,0 +1,90 @@
+
+body{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+} 
+
+hr {
+    width: 500px;
+}
+
+#errors {
+    color: #0994d9
+}
+
+#board {
+    width: 450px;
+    height: 450px;
+
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tile{
+    width: 48px;
+    height: 48px;
+    border: 1px solid rgb(170, 170, 170);
+
+    /* Text */
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#digits {
+    width: 450px;
+    height: 50px;
+
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.number{
+    width: 44px;
+    height: 44px;
+    border: 1px solid black;
+    margin: 2px;
+
+    /* Text */
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.number-selected{
+    background-color: #0994d9;
+}
+
+.tile-start{
+    background-color: lightgrey;
+}
+
+.tile-done{
+    color: rgba(0, 0, 0, 0.25);
+    background-color: transparent;
+}
+
+.horizontal-line{
+    border-bottom: 1px solid black;
+}
+
+.vertical-line{
+    border-right: 1px solid black;
+}
+
+.errorAnime{
+    animation:  shake 0.8s forwards;
+}
+
+@keyframes shake {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(5deg); }
+    50% { transform: rotate(0deg); }
+    75% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+  }
